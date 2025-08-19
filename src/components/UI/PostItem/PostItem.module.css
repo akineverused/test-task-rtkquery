@@ -1,0 +1,24 @@
+.wrap{
+    width: 200px;
+    height: 250px;
+    border: none;
+    border-radius: 8px;
+    padding: 16px 8px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    box-shadow: 4px 4px 10px gray;
+    transition: 0.3s;
+}
+.wrap:hover{
+    cursor: pointer;
+    scale: 1.05;
+}
+.image{
+    background-color: gray;
+    height: 80px;
+}
+.title{
+    font-size: 16px;
+}

@@ -1,0 +1,12 @@
+.wrap{
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+.postsGrid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 50px 100px;
+}
