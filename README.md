@@ -1,34 +1,15 @@
-# Test Task RTK Query
+# React Docker App
 
-This project is a React + TypeScript application using Redux Toolkit and RTK Query.  
-It demonstrates authentication, posts fetching, and comments display from JSONPlaceholder API.
+A simple React web application containerized with Docker.
 
-## Features
-
-- TypeScript support
-- Redux Toolkit + RTK Query for state management
-- React Router v6 routing
-- Toast notifications
-- Responsive layout
-
-## Getting Started
-
-### Install dependencies
-
+### 1. Build Image
 ```bash
-npm install
+docker build -t react-app .
 ```
 
-### Run locally
+### 2. Run Container
 ```bash
-npm start
+docker run -d -p 8080:3000 --name react-container react-app
 ```
-The app will run on http://localhost:3000.
 
-### API
-
-Using JSONPlaceholder for posts, users, and comments.
-
-### Docker
-
-See Dockerfile for instructions.
+Open http://localhost:8080 in your browser.
